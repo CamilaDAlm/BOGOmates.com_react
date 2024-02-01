@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CamilaDAlm/BOGOmates.com_react/static/css/main.e6c13ad2.css",
+    "main.js": "/CamilaDAlm/BOGOmates.com_react/static/js/main.6f487324.js",
+    "static/js/787.11730b22.chunk.js": "/CamilaDAlm/BOGOmates.com_react/static/js/787.11730b22.chunk.js",
+    "index.html": "/CamilaDAlm/BOGOmates.com_react/index.html",
+    "main.e6c13ad2.css.map": "/CamilaDAlm/BOGOmates.com_react/static/css/main.e6c13ad2.css.map",
+    "main.6f487324.js.map": "/CamilaDAlm/BOGOmates.com_react/static/js/main.6f487324.js.map",
+    "787.11730b22.chunk.js.map": "/CamilaDAlm/BOGOmates.com_react/static/js/787.11730b22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6f487324.js"
+  ]
+}
