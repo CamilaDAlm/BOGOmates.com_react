@@ -4,6 +4,6 @@
         "Accept": "application/json"
        },
 
-    "click":[{"count":"0"}]
+    "click":"0"
 
 }]
