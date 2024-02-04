@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/rest";
 import { createTokenAuth } from "@octokit/auth-token";
-
+import {Token} from '../token.js';
 export async function updateJson(count){
   let data = [{
         "headers" : { 
@@ -15,21 +15,21 @@ export async function updateJson(count){
     console.log(data);
     //let url = "https://github.com/CamilaDAlm/BOGOmates.com_react/tree/main/bogomates_fakedoor/public"
     //let url = "c"
-    let url = "public/"
-    let options = {
-                    method:'POST',
-                    body:JSON.stringify(data)
+    //let url = "public/"
+    //let options = {
+    //                method:'POST',
+    //                body:JSON.stringify(data)
 
 
-    };
+    //};
 
-    const token = "";
+   // const token = "";
                    
     //const auth = createTokenAuth(token.toString());
     //const authentication = await auth();
 
     const octokit = new Octokit({
-       auth : token,
+       auth : Token(),
       })
 
     const request1 = await octokit.request('PUT /repos/CamilaDAlm/BOGOmates.com_react/', {
