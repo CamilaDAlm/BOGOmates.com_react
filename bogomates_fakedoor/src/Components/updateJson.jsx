@@ -23,7 +23,7 @@ export async function updateJson(count){
 
     };
 
-    const token = "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";
+    const token = "";
                    
     //const auth = createTokenAuth(token.toString());
     //const authentication = await auth();
