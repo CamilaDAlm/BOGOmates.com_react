@@ -54,7 +54,7 @@ export class Bogoapp extends React.Component {
     let info=null
 
     if (this.context.page === 2){
-      info=<div> 
+      info=<div className="body-menu-style"> 
       <h2>Promos</h2>
       <PromoComponent/>
       </div>
