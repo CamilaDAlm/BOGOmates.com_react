@@ -24,3 +24,5 @@ yarn-error.log*
 
 #files
 /src/token.js
+main.py
+api.py
