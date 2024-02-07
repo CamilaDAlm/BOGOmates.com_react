@@ -10,10 +10,10 @@ import { Bogoapp } from './bogoapp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ContextProvider>
-    <Bogoapp/>
+  <Bogoapp/>
   </ContextProvider>
 );
-// <App />
+// 
 /* <React.StrictMode>
    <Bogoapp/>
   </React.StrictMode>*/

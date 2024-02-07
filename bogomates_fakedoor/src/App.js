@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
-
+import './style.scss';
+import { carousel } from './Components/carousel';
 function App() {
 
   function countClick(){
@@ -9,12 +9,10 @@ function App() {
   }
 
   return (
-   <div>
-    <h2>PAGINA DE EJEMPLO</h2>
-    <p>holaaaa</p>
-    <button onClick={countClick()}>Clica aqui</button>
-
-   </div>);
+    <div>hello
+    {carousel()}
+    </div>
+  );
 }
 
 export default App;

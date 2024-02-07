@@ -4,7 +4,10 @@ import { Context } from "./Context/context";
 import { HeaderComponent } from "./Components/headerComponent";
 import { updateJson } from "./Components/updateJson";
 import { PromoComponent } from "./Components/promoComponent";
-import "./bogo.scss";
+import { webPrueba } from "./webprueba";
+//import "./bogo.scss";
+import { HeadingComponent } from "./Components/headingComponent";
+import { HomeComponent } from "./Components/homeComponent";
 //import "./clickCount.json";
 export class Bogoapp extends React.Component {
   static contextType = Context;
@@ -65,21 +68,24 @@ export class Bogoapp extends React.Component {
        </div>
        }else {
        info = 
-        <div className="body-menu-style"> <h2>Welcome to BOGOmates.com</h2>
+       <>
+       <HeadingComponent/>
+       <HomeComponent/>
+       </>
+       //webPrueba();
+        /*<div className="body-menu-style"> <h2>Welcome to BOGOmates.com</h2>
        <h3>Do you want to enjoy some 2x1 promos ? </h3>
        <h3>but...</h3>
        <h3>are missing your promo mate? </h3>       
         
         <button className='button-menu-style' onClick={()=>this.handleClickPage(2)}>Discover BOGOmates.com</button>
-        </div> 
+        </div> */
        }
 // <Counter ></Counter>
     return(
-      <div className='body-style'>  
-    
-    <HeaderComponent/>
+      <>  
         {info}
-   </div>
+   </>
    )
 
   };
