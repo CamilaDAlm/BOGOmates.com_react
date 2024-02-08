@@ -1,6 +1,6 @@
 
 $primary-color:rgba(144, 101, 241);
-$hover-color:rgb(83, 30, 205);    
+$hover-color:rgb(177, 143, 255);
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
@@ -11,21 +11,32 @@ body, html {
     color:white;
     background-color: $primary-color;
     &:hover{
-        background-color: $hover-color;
+        background-color: $hover-color!important;
+        color: white!important;
     }
 }
 
 .title{
-    color:rgb(76, 0, 255);
-    background-color: rgb(255, 255, 255);
+    color:rgba(144, 101, 241);
+    background-color: rgba(255, 255, 255,0.75);
 }
+
+
 
 .bgimg {
     opacity: 0.5;
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://img.freepik.com/vector-gratis/ofrecer-etiquetas-promocion_23-2148716205.jpg");
+    //background:url("https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true") repeat;
+    background-position: 447px 560px;//center;
+    background-size:contain;
+    height: 412px;
+    position: relative;
+    background-image: url("https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true");
     min-height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    //width: 50%;
+   //max-width: 100%;
+   // height: auto;
 }
 
 .menu {

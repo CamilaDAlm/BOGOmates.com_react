@@ -40,15 +40,15 @@ render(){
 
     {/*heading */}  
     <div className="w3-top ">
-      <div className="w3-row w3-padding header">
+      <div className="w3-row w3-padding" style={{backgroundColor:"rgba(144, 101, 241)"}} >
         <div className="w3-col s3">
           <a href="#home" className="header w3-button w3-block ">HOME</a>
         </div>
         <div className="w3-col s3">
-          <a href="#where" className="w3-button w3-block header">WHERE</a>
+          <a href="#promos" className="w3-button w3-block header">PROMOS</a>
         </div>
         <div className="w3-col s3">
-          <a href="#menu" className="w3-button w3-block header">PROMOS</a>
+          <a href="#register" className="w3-button w3-block header">REGISTER</a>
         </div>
         <div className="w3-col s3">
           <a href="#about" className="w3-button w3-block header">ABOUT</a>
@@ -57,13 +57,16 @@ render(){
       </div>
     </div>
     {/*image background */}  
- <header className="bgimg w3-display-container" id="home" style={{'height':'457.882px'}}>
+   
+ <header className=" w3-display-container" id="home" >
+  {/*<img  className="bgimg w3-display-middle" src="https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true" ></img>*/}
+    <header className=" bgimg " ></header>
       <div className="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-        <span className="w3-tag">Open from 6am to 5pm</span>
+        <span className="w3-tag" style={{backgroundColor:"rgba(144, 101, 241)"}}>BOGOmates.com</span>
       </div>
       <div className="w3-display-middle w3-center">
-        <span className="title w3-text " style={{fontSize:'90px'}}>BOGOmates<br/>.com</span>
-      </div>
+        <span className="title w3-text " style={{fontSize:'80px'}}>BOGOmates<br/>.com</span>
+    </div>
       <div className="w3-display-bottomright w3-center w3-padding-large">
         <span className="w3-text-white">15 Adr street, 5015</span>
       </div>
