@@ -1,6 +1,6 @@
 
-$primary-color:rgb(255, 0, 93); //rgba(144, 101, 241);
-$hover-color:rgba(255,137,180,82%); //rgb(177, 143, 255);
+$primary-color:rgb(255, 0, 93); //rgba(144, 101, 241); 
+$hover-color:rgba(255,137,180,82%);  //rgb(177, 143, 255);
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
@@ -27,6 +27,11 @@ body, html {
 
 .basic-color{
     background-color:$primary-color;
+}
+
+.btext-color{
+    color:$primary-color;
+    font-size: small;
 }
 
 .bgimg {

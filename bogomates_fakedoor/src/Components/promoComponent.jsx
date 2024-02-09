@@ -39,11 +39,40 @@ export class PromoComponent extends React.Component{
     <div class="w3-container w3-card w3-white w3-round w3-margin"><br/>
       <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" 
       alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{width:"60px"}}></img>
-    <h4>Tim Jones</h4><br/>
+    <h4>Tim Jones</h4>
+    <p className="w3-small"><strong className="btext-color">Availability:</strong>Mondays from 8pm-10pm</p>
+    <p className="w3-small"><strong  className="btext-color">Location:</strong>New York</p>
     <hr class="w3-clear"></hr>
     <img src={image.url} alt="promo" style={{width:"90%"}} class="w3-margin-bottom"/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Hello, I'm looking for someone to share this promo! Is anyone interested?</p>
+    
+    {/*likes and comment info*/}
+    <div className="w3-hide-small">
+          <p className="w3-tag w3-left title">
+            <i className="fa fa-heart"></i> 
+            <strong> 12 </strong> 
+            
+            <i className="fa fa-comment"></i> 
+            <strong> 5</strong>             
+             </p> <br/>           
+          
     </div>
+
+    {/*Comments of ppl */}
+    <hr class="w3-clear"></hr>
+      <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" 
+      alt="Avatar" className="w3-left w3-circle w3-margin-right" style={{width:"30px"}}></img>
+    <h6>Tim Jones</h6>
+    <p>Thats cool! Do you want to meet next monday?</p>
+    <p><strong className="btext-color">Availability</strong>:Mondays from 8pm-10pm</p>
+    <p><strong className="btext-color">Location</strong>:New York</p>
+    <hr class="w3-clear"></hr>
+    <button type="button" className="w3-button w3-margin-bottom w3-large header"><i className="fa fa-comment"></i> 
+     I'm interested!</button> 
+
+  
+    </div>
+   
     </div>
    )) )
 
