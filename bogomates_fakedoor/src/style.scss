@@ -1,6 +1,6 @@
 
-$primary-color:rgba(144, 101, 241);
-$hover-color:rgb(177, 143, 255);
+$primary-color:rgb(255, 0, 93); //rgba(144, 101, 241);
+$hover-color:rgba(255,137,180,82%); //rgb(177, 143, 255);
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
@@ -17,16 +17,22 @@ body, html {
 }
 
 .title{
-    color:rgba(144, 101, 241);
+    color:$primary-color;
     background-color: rgba(255, 255, 255,0.75);
 }
 
+.title-top{
+    top: 78% !important;
+}
 
+.basic-color{
+    background-color:$primary-color;
+}
 
 .bgimg {
     opacity: 0.5;
     //background:url("https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true") repeat;
-    background-position: 447px 560px;//center;
+    background-position: 300px 650px;//center;
     background-size:contain;
     height: 412px;
     position: relative;

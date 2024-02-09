@@ -40,7 +40,11 @@ render(){
 
     {/*heading */}  
     <div className="w3-top ">
-      <div className="w3-row w3-padding" style={{backgroundColor:"rgba(144, 101, 241)"}} >
+   
+      <div className="w3-row w3-padding basic-color" >
+        <div className="w3-col s3"  style={{position:"relative"}}>
+            <a href="#home" className="header w3-button w3-block " style={{fontSize:"20px"}}>BOGOmates.com</a>
+        </div>
         <div className="w3-col s3">
           <a href="#home" className="header w3-button w3-block ">HOME</a>
         </div>
@@ -49,11 +53,7 @@ render(){
         </div>
         <div className="w3-col s3">
           <a href="#register" className="w3-button w3-block header">REGISTER</a>
-        </div>
-        <div className="w3-col s3">
-          <a href="#about" className="w3-button w3-block header">ABOUT</a>
-        </div>
-        
+        </div> 
       </div>
     </div>
     {/*image background */}  
@@ -62,13 +62,18 @@ render(){
   {/*<img  className="bgimg w3-display-middle" src="https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true" ></img>*/}
     <header className=" bgimg " ></header>
       <div className="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-        <span className="w3-tag" style={{backgroundColor:"rgba(144, 101, 241)"}}>BOGOmates.com</span>
+        <span className="w3-tag basic-color" >Follow us!</span>
       </div>
-      <div className="w3-display-middle w3-center">
-        <span className="title w3-text " style={{fontSize:'80px'}}>BOGOmates<br/>.com</span>
+      <div className="w3-display-middle w3-center title-top">
+        <span className="title w3-text" style={{fontSize:"50px"}} >Find BOGO deals today!</span>
+    
+        <div className="w3-display-bottom w3-center">
+          <a href="#promos" className="w3-button w3-large header"> See the newest promos</a>
+        </div>
     </div>
+   
       <div className="w3-display-bottomright w3-center w3-padding-large">
-        <span className="w3-text-white">15 Adr street, 5015</span>
+        <span className="title">Since february 2024</span>
       </div>
     </header>
    
