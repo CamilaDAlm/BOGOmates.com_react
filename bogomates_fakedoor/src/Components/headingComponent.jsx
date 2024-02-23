@@ -1,8 +1,9 @@
 
 import '../style.scss';
 import React from "react";
-import { Button } from "@mui/material";
+
 import { carousel } from './carousel';
+import { Icon, SvgIcon } from '@mui/material';
 export class HeadingComponent extends React.Component{
 
     constructor(props) {
@@ -26,30 +27,29 @@ render(){
 
         <>
 
-    {/*heading */}  
+    {/*heading   <a  className="header w3-bar-item  w3-button" style={{fontSize:"20px"}}>BOGOmates.com</a> */}  
     <div className="w3-top ">
-      <div className="w3-row w3-padding basic-color" >
-      <img className="svg" alt="icon" src='bogo_logo.svg' style={{width:"4%"}} ></img>
-       <a href="#home" className="header w3-bar-item  w3-button" style={{fontSize:"20px"}}>BOGOmates.com</a>
+      <div className="w3-row  basic-color" >
+      <img href="#home" className="svg" alt="icon" src='logo.svg' style={{width: '20%'}} ></img>
+      
        
-       
-        <div className="w3-col s3 w3-right">
+        <div className="w3-col s3 w3-right w3-hide-small">
           <a href="#register" className="w3-button w3-block header">REGISTER</a>
         </div> 
 
-        <div className="w3-col s3 w3-right ">
+        <div className="w3-col s3 w3-right w3-hide-small ">
           <a href="#discover" className="w3-button w3-block header">DISCOVER</a>
         </div>
 
-        <div className="w3-col s3 w3-right ">
+        <div className="w3-col s3 w3-right w3-hide-small">
           <a href="#promos" className="w3-button w3-block header">DEALS</a>
         </div>
-        
+    
       </div>
     </div>
     {/*image background */}  
    
- <header className=" w3-display-container "  id="home" >
+ <header className=" w3-display-container w3-content w3-wide" style={{maxWidth:"1600px",minWidth:"500px"}} id="home" >
  
    {/*   
     <img alt='background' width="30%" style={{position:"300px 300px"}} className="w3-image" src="./blogo.jpeg" ></img>
@@ -74,15 +74,14 @@ render(){
        </Button>
 
       </div>
-   
-   
-   
-   
+    
+   style={{width:"100%",minHeight:"350px",maxHeight:"600px"}}
+  
+   <header className=" bgimg " ></header>
    */} 
 
-    <header className=" bgimg " ></header>
-      
-      
+<img class="w3-image" src="banner4.png" alt="banner" width="1600px" height="500px" />
+
       <div className="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
         <span className="w3-tag basic-color" >Follow us!</span>
       </div>

@@ -29,10 +29,12 @@ render(){
 
         <div className="w3-container" id="promos">
         <div className="w3-content" style={{maxWidth:"2700px"}}>
+            
             <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide basic-color">
               DEALS</span></h5>
-            <p>Find great <strong className="title">BOGO deals </strong> + people to enjoy it and save money with!</p>   
-            <p>Hit match and find your <strong className="title">BOGO mate</strong> !</p>   
+           
+            {/*<p>Find great <strong className="title">BOGO deals </strong> + people to enjoy it and save money with!</p>   
+            <p>Hit match and find your <strong className="title">BOGO mate</strong> !</p>  */ }
             <div class="w3-row-padding" >
             
             {<PromoComponent></PromoComponent>}
@@ -44,8 +46,8 @@ render(){
         <div className="w3-content" style={{maxWidth:"700px"}}>
             <h5 className="w3-center w3-padding-48"><span className="w3-tag w3-wide basic-color">
               DISCOVER</span></h5>
-            <p>
-              Find lots of deals near your city! 
+            <p className={'w3-center'} style={{color:"#ffe255ff",fontSize:"20px"}}>
+             <strong> Find lots of deals near your city! </strong> <br/>
               Filter the available deals by city 
               so that you don't miss any great deals near you!   
               Join BOGOmates and meet your closest <strong className="title">BOGO match</strong>!

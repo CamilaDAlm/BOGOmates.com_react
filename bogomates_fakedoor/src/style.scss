@@ -1,10 +1,11 @@
 
-$primary-color:rgb(255, 0, 93); //rgba(144, 101, 241); 
+$primary-color:#C095F9;  //rgb(255, 0, 93); //rgba(144, 101, 241); 
 $hover-color:rgba(255,137,180,82%);  //rgb(177, 143, 255);
+$body-color:#dd5252ff;
 body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
-    
+    background-color:$body-color;
 }
 
 .header{
@@ -18,7 +19,11 @@ body, html {
 
 .title{
     color:$primary-color ;
-    background-color: rgba(255, 255, 255,0.75);
+    //background-color: rgba(255, 255, 255,0.75);
+}
+
+.title-accordion{
+    color:white;
 }
 
 .title-top{
@@ -28,21 +33,28 @@ body, html {
 .basic-color{
     background-color:$primary-color;
 }
-
+.basic-color-body{
+    background-color: $body-color;
+}
 .btext-color{
     color:$primary-color;
     font-size: small;
 }
 
-.bgimg {
-    //opacity: 0.9;
-    //background:url("https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true") repeat;
+.bgimg{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../public/banner.png");
+    min-height: 100%;
+}
+
+/*.bgimg {
     background-position:-10px 30px;//center;  //545px 490px;-> fliped    //-601px -434px -> sin flip
     background-size:cover; //contain;
     height:450px; //1100px;  //450px; -> fliped
     position: relative;
     background-color: $hover-color;
-    background-image: url("../public/banner.jpeg");
+    background-image: url("../public/banner.png");
     //background-image: url("../public/blogo.jpeg");//("https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/banner.png?raw=true");
     min-height: 70%;
     //margin-left: auto;
@@ -50,7 +62,7 @@ body, html {
     //width:50%;
    // max-width: 100%;
     //height: auto;
-}
+}*/
 
 .menu {
     display: none;
