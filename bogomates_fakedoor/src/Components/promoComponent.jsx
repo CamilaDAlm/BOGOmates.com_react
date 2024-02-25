@@ -291,7 +291,7 @@ imageGallery2(){
     return(
       
     <div >  
-      <ImageList sx={{ width: 1120, height: 800 }} cols={3} rowHeight={320}>
+      <ImageList sx={{ maxWidth: 1120, maxHeight: 800 }} cols={3} rowHeight={320}>
       {this.promosURL.map((item)=>(
         <div class="w3-container">
        <ImageListItem key={item.img}>
