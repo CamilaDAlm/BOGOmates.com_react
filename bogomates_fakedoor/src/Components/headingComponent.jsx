@@ -21,6 +21,35 @@ export class HeadingComponent extends React.Component{
     </div>
  */
 
+    /*   
+    <img alt='background' width="30%" style={{position:"300px 300px"}} className="w3-image" src="./blogo.jpeg" ></img>
+   <header className=" bgimg " ></header>
+   
+   <div className="w3-display-middle w3-top w3-center title-top">  
+      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >Do you want to enjoy some 2x1 deals ?</span>
+      <br/>
+      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >but...</span>     
+      <br/>
+      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >are you missing your promo mate?</span>        
+      <br/>
+      <Button
+      className="header"
+      
+      variant="contained"
+      href="#promos"
+     
+      >
+         Find your BOGO MATCH today!
+        
+       </Button>
+
+      </div>
+    
+   style={{width:"100%",minHeight:"350px",maxHeight:"600px"}}
+  
+   <header className=" bgimg " ></header>
+   */ 
+
 
 render(){
        return(
@@ -48,38 +77,11 @@ render(){
       </div>
     </div>
     {/*image background */}  
+
    
  <header className=" w3-display-container w3-content w3-wide" style={{maxWidth:"1600px",minWidth:"500px"}} id="home" >
  
-   {/*   
-    <img alt='background' width="30%" style={{position:"300px 300px"}} className="w3-image" src="./blogo.jpeg" ></img>
-   <header className=" bgimg " ></header>
    
-   <div className="w3-display-middle w3-top w3-center title-top">  
-      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >Do you want to enjoy some 2x1 deals ?</span>
-      <br/>
-      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >but...</span>     
-      <br/>
-      <span className="title-top w3-text" style={{fontSize:"40px",color:'white'}} >are you missing your promo mate?</span>        
-      <br/>
-      <Button
-      className="header"
-      
-      variant="contained"
-      href="#promos"
-     
-      >
-         Find your BOGO MATCH today!
-        
-       </Button>
-
-      </div>
-    
-   style={{width:"100%",minHeight:"350px",maxHeight:"600px"}}
-  
-   <header className=" bgimg " ></header>
-   */} 
-
 <img class="w3-image" src="banner4.png" alt="banner" width="1600px" height="500px" />
 
       <div className="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
