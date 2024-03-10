@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import { ContextProvider } from './Context/context';
 import { Bogoapp } from './bogoapp';
+import TagManager from 'react-gtm-module';
+ 
+const tagManagerArgs = {
+    gtmId: 'G-GV1R7BSN88'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
