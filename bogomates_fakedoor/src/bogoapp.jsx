@@ -9,6 +9,19 @@ import { webPrueba } from "./webprueba";
 import { HeadingComponent } from "./Components/headingComponent";
 import { HomeComponent } from "./Components/homeComponent";
 //import "./clickCount.json";
+
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'GTM-KKG4KS8N',
+    dataLayer: {
+        userId: '001',
+        userProject: 'project'
+    }
+}
+ 
+TagManager.initialize(tagManagerArgs)
+
 export class Bogoapp extends React.Component {
   static contextType = Context;
     constructor(props) {

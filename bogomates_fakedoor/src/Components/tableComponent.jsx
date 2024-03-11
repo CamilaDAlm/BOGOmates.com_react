@@ -10,6 +10,7 @@ import Avatar from '@mui/material/Avatar';
 import { Typography } from '@mui/material';
 import { CardHeader } from '@mui/material';
 import { Button } from '@mui/material';
+import { HandleClickGAEvents } from './gaEventsComponent';
 
 function createData(user, availability,location,comments ) {
   return { user, availability,location,comments };
@@ -23,6 +24,7 @@ const rows = [
 ];
 
 export  function BasicTable() {
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -59,6 +61,8 @@ export  function BasicTable() {
                 role={undefined}
               variant="contained"
               tabIndex={-1}
+              onClick={()=>{
+                HandleClickGAEvents('deals','click-match')}}
                 >
                 Match!
               </Button>   

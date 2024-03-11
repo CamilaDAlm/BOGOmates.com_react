@@ -2,9 +2,9 @@ import '../style.scss';
 
 import React from "react";
 import { PromoComponent } from './promoComponent';
-
+import ReactGA from 'react-ga';
+import { HandleClickGAEvents } from './gaEventsComponent';
 export class HomeComponent extends React.Component{
-
 
 
 render(){
@@ -70,7 +70,10 @@ render(){
           <p><input className="w3-input w3-padding-16 w3-border" type="number" placeholder="age" required name="age"/></p>
           <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="email" required name="email"/></p>
           <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="location" required name="location"/></p>
-          <p><button className="w3-button header" >SIGN UP</button></p>
+          <p><button className="w3-button header" onClick={()=>{
+            HandleClickGAEvents('regiser','signup')
+          }} >SIGN UP</button></p>
+          
         </div>
       </div>
     </div>    

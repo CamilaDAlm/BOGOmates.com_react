@@ -4,6 +4,7 @@ import React from "react";
 
 import { carousel } from './carousel';
 import { Icon, SvgIcon } from '@mui/material';
+import { HandleClickGAEvents } from './gaEventsComponent';
 export class HeadingComponent extends React.Component{
 
     constructor(props) {
@@ -50,7 +51,6 @@ export class HeadingComponent extends React.Component{
    <header className=" bgimg " ></header>
    */ 
 
-
 render(){
        return(
 
@@ -63,15 +63,20 @@ render(){
       
        
         <div className="w3-col s3 w3-right w3-hide-small">
-          <a href="#register" className="w3-button w3-block header">REGISTER</a>
+          <a href="#register" className="w3-button w3-block header" onClick={()=>{
+          HandleClickGAEvents('register','click-register')
+            }}>REGISTER</a>
         </div> 
 
         <div className="w3-col s3 w3-right w3-hide-small ">
-          <a href="#discover" className="w3-button w3-block header">DISCOVER</a>
+          <a href="#discover" className="w3-button w3-block header" onClick={()=>{
+               HandleClickGAEvents('discover','click-discover')
+            }}>DISCOVER</a>
         </div>
 
         <div className="w3-col s3 w3-right w3-hide-small">
-          <a href="#promos" className="w3-button w3-block header">DEALS</a>
+          <a href="#promos" className="w3-button w3-block header" onClick={()=>{
+               HandleClickGAEvents('deals','click-deals')}}>DEALS</a>
         </div>
     
       </div>

@@ -6,12 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { ContextProvider } from './Context/context';
 import { Bogoapp } from './bogoapp';
 import TagManager from 'react-gtm-module';
- 
+import ReactGA from 'react-ga';
+
+//Google tag manager
 const tagManagerArgs = {
-    gtmId: 'G-GV1R7BSN88'
+    gtmId: 'GTM-KKG4KS8N'
 }
- 
 TagManager.initialize(tagManagerArgs)
+
+//Google Analytics
+const TRACKING_ID = "G-GV1R7BSN88"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
