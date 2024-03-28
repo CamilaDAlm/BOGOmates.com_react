@@ -9,8 +9,10 @@ import { webPrueba } from "./webprueba";
 import { HeadingComponent } from "./Components/headingComponent";
 import { HomeComponent } from "./Components/homeComponent";
 //import "./clickCount.json";
-
+import { initGA,PageView } from "./Components/gaEventsComponent";
 import TagManager from 'react-gtm-module'
+import ResponsiveAppBar from "./Components/navbarComponent";
+import TopHeaderComponent, { ButtonBaseDemo } from "./Components/topHeaderComponent";
  
 const tagManagerArgs = {
     gtmId: 'GTM-KKG4KS8N',
@@ -35,6 +37,8 @@ export class Bogoapp extends React.Component {
   
 
     componentDidMount(){
+        initGA("G-GV1R7BSN88");
+        PageView();
         fetch('./clickCount.json'
         ,{
           headers : { 
@@ -82,7 +86,12 @@ export class Bogoapp extends React.Component {
        }else {
        info = 
        <>
-       <HeadingComponent/>
+       {/*<HeadingComponent/>
+      
+         <ButtonBaseDemo/>
+       */}
+     
+     <TopHeaderComponent/>
        <HomeComponent/>
        <footer className="w3-container w3-theme-d3 w3-padding-16">
         <h5 className="w3-center title">BOGOmates.com - 2024</h5>

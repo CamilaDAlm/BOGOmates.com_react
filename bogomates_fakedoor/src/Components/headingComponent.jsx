@@ -1,10 +1,13 @@
 
 import '../style.scss';
 import React from "react";
-
+import ReactGA from "react-ga";
 import { carousel } from './carousel';
 import { Icon, SvgIcon } from '@mui/material';
 import { HandleClickGAEvents } from './gaEventsComponent';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 export class HeadingComponent extends React.Component{
 
     constructor(props) {
@@ -52,14 +55,25 @@ export class HeadingComponent extends React.Component{
    */ 
 
 render(){
-       return(
+
+  const Img = styled('img')({
+    maxWidth: '100%',
+    height: '100%',
+    padding: '0',
+    margin: '0',
+  });
+  
+  return(
 
         <>
 
     {/*heading   <a  className="header w3-bar-item  w3-button" style={{fontSize:"20px"}}>BOGOmates.com</a> */}  
     <div className="w3-top ">
       <div className="w3-row  basic-color" >
+      <ReactGA.OutboundLink eventLabel="Logo" to="/" target="_self">
       <img href="#home" className="svg" alt="icon" src='logo.svg' style={{width: '20%'}} ></img>
+      </ReactGA.OutboundLink>
+     
       
        
         <div className="w3-col s3 w3-right w3-hide-small">
@@ -81,13 +95,26 @@ render(){
     
       </div>
     </div>
-    {/*image background */}  
+    
+    
+    {/*image background */} 
 
-   
- <header className=" w3-display-container w3-content w3-wide" style={{maxWidth:"1600px",minWidth:"500px"}} id="home" >
+    
+<Box sx={{ flexGrow: 1 }}>
+<Grid container spacing={2}>
+    <Grid item xs > 
+        <Img src="banner3.png" alt="banner" />
+    </Grid>    
+</Grid>
+</Box>
+
+
+{/*
+
+<header className=" w3-display-container w3-content w3-wide" style={{maxWidth:"2000px",minWidth:"500px"}} id="home" >
  
    
-<img class="w3-image" src="banner4.png" alt="banner" width="1600px" height="500px" />
+<img class="w3-image" src="banner3.png" alt="banner" maxWidth="2000px" height="500px" />
 
       <div className="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
         <span className="w3-tag basic-color" >Follow us!</span>
@@ -96,6 +123,8 @@ render(){
         <span className="title">Since february 2024</span>
       </div>
     </header>
+
+ */} 
    
     
    </>

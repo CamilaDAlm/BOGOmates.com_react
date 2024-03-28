@@ -1,9 +1,11 @@
 import React from "react";
 import './promo.scss';
+import Stack from '@mui/material/Stack';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import { CardHeader, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {BasicTable} from './tableComponent';
 import EditNoteIcon from '@mui/icons-material/EditNote';
@@ -15,7 +17,13 @@ import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import IconButton from '@mui/material/IconButton';
-
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { Box } from '@mui/material';
+import ButtonBase from '@mui/material/ButtonBase';
+import {Grid} from '@mui/material';
+import Paper from '@mui/material/Paper';
+import { CheckboxListSecondary } from "./listComponent";
 export class PromoComponent extends React.Component{
     constructor(props) {
         super(props);
@@ -28,15 +36,28 @@ export class PromoComponent extends React.Component{
 
       this.promosURL=[    
         {url: 'https://learnopoly.com/wp-content/uploads/2022/11/image3-4.jpg', link:'https://learnopoly.com/masterclass-buy-one-get-one-free-offer/'
-         ,title:'2x1 masterclass with celebrities', id:"0"},
-         {url:"https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/mcdonalds_2x1.jpeg?raw=true"
-         ,link: 'https://www.mcdonalds.com/us/es-us/bogo-1.html', title:'bogo deal McDonalds',id:"1"},
+         ,title:'2x1 masterclass with celebrities', id:"0", user:" Kim Apple", user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg" 
+        ,user_availability:"afternoon", location:"New York"},
+         
+        {url:"https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/mcdonalds_2x1.jpeg?raw=true"
+         ,link: 'https://www.mcdonalds.com/us/es-us/bogo-1.html', title:'bogo deal McDonalds',id:"1", user:"Hugo Perez",
+         user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg", user_availability:"afternoon", location:"New York"},
+         
          {url:'https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/promo_spa.png?raw=true'
-         ,link:'https://www.marinasenses.com/promociones/Cup%C3%B3n%202x1/',title:'Great spa promo',id:"2"},
+         ,link:'https://www.marinasenses.com/promociones/Cup%C3%B3n%202x1/',title:'Great spa promo',id:"2", user:"Emily Pope",user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg",
+         user_availability:"afternoon", location:"New York"},
+        
          {url:"https://www.golfbogo.com/cdn/shop/products/RiverbendWEBJPG_4b2a3f38-d094-4799-942d-c1c22c05847f_1080x.jpg?v=1700633349"
-         , link:'', title:'2x1 golf deal',id:"3"},
+         , link:'', title:'2x1 golf deal',id:"3", user:" PromoLover_24", user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg"
+         ,user_availability:"afternoon", location:"New York"},
+        
          {url:'https://images.squarespace-cdn.com/content/v1/547e39eee4b004945e334543/1637857691351-IXC1JUN9TOSEY3BPYWED/Float+Tank+2.jpg?format=1000w',
-          link:'', title:'BOGO Sale! (2x) 90 min Salt Water Floatation',id:"4"}        
+          link:'', title:'BOGO Sale! (2x) 90 min Salt Water Floatation',id:"4", user:"Grimes fan",user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg",
+          user_availability:"afternoon", location:"New York"} ,
+
+          {url:'https://static.chollometro.com/threads/raw/MY7Jx/1260129_1/re/1024x1024/qt/60/1260129_1.jpg',
+          link:'https://www.chollometro.com/ofertas/ribs-2x1-en-burgers-de-lunes-a-viernes-solo-en-restaurante-del-2003-al-2005-1260129', title:'2x1 Burgers ',id:"4", user:"Grimes fan",user_avatar:"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg",
+          user_availability:"afternoon", location:"New York"}        
          ]   
     
        //there is a this.context
@@ -128,6 +149,124 @@ list_posts.map((post,i)=>{
 
 
 */
+
+
+ComplexGrid() {
+  const Img = styled('img')({
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
+    align:'center',
+  });
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+    <Grid container 
+     direction="row"
+     justifyContent="center"
+     alignItems="center"
+     spacing={{ xs: 3, md: 3 }} 
+     columnSpacing={{ xs: 1, sm: 2, md: 3}} 
+     columns={{ xs: 2, sm: 4, md: 6 }}>
+  {this.promosURL.map( (image)=>(
+    <Grid item xs={2} sm={4} md={2}>
+    <Paper
+      sx={{
+        p: 2,
+        margin: 'auto',
+        maxWidth: 500,
+        flexGrow: 1,
+        backgroundColor: (theme) =>
+          theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+      }}
+    >
+      <Grid container spacing={2}>
+        <Grid item >
+          <ButtonBase sx={{ width: 250, height: 200 }} >
+          <Img alt={image.title} src={image.url} />
+          </ButtonBase>
+          {/* INFO OF USER THAT POSTED PROMO */}
+          <CardHeader
+              avatar={
+                <Avatar
+                  alt={`Avatar ${image.user }`}
+                  src={`${image.user_avatar }`}
+                  sx={{ width: 24, height: 24 }} 
+                  />
+                }
+                title={image.user}
+                subheader={
+                <Stack direction="row" alignItems="center" gap={1}>
+                  <LocationOnIcon fontSize="small"/>
+                  <Typography variant="body2">{ image.location +" - "} </Typography>
+                 <CalendarMonthIcon fontSize="small"/>
+                <Typography variant="body2">{ image.user_availability} </Typography>
+              </Stack>
+                 
+                }
+               />
+                <Typography variant="body2" gutterBottom  component="div">
+                   Hello! This promo looks amazing, does someone want to come with me?
+                  </Typography>
+        </Grid>
+      
+        <Grid item xs={12} sm container>
+          <Grid item xs container direction="column" spacing={2}>
+            <Grid item xs >
+              {/* LIST OF INTERESTED USERS */}
+             <CheckboxListSecondary/>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Paper>
+    </Grid>
+    ))}
+    </Grid>
+    </Box>
+    );
+}
+
+RowAndColumnSpacing() {
+  /*
+   <Img alt={image.title} src={image.url}/>
+
+  <ButtonBase sx={{ maxWidth: 512, maxHeight: 512 }}>
+          <Img alt={image.title} src={image.url}/>
+          </ButtonBase>*/ 
+  const Img = styled('img')({
+    maxWidth: '100%',
+    height: '100%',
+    padding: '0',
+    margin: '0',
+  });
+    return (
+      <Box sx={{ flexGrow: 1 }}>
+         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        {this.promosURL.map( (image)=>(
+          
+     
+          
+          <Grid item xs={'auto'}>
+          <ButtonBase sx={{ maxWidth: 512, maxHeight: 512 }}>
+          <Img alt={image.title} src={image.url}/>
+          </ButtonBase>
+
+         
+          <Typography style={{fontSize:'12px'}}> 
+                See if your availabilities work together and hit <strong className="title"> MATCH! </strong>
+          </Typography>
+
+          <BasicTable NumRowsPage = {3} />
+         </Grid>
+
+        
+      ))}
+      </Grid>
+      </Box>
+    );
+  }
+
 
 handleChange = (panel) => (event, newExpanded) => {
   //let result =newExpanded ? panel : false;
@@ -273,7 +412,8 @@ imageGalleryOld(){
 
 imageGallery2(){
 
- 
+     const maxWidth=2100;
+     const maxHeight=800 ;
 
      const ExpandMore = styled((props) => {
       const { expand, ...other } = props;
@@ -291,7 +431,7 @@ imageGallery2(){
     return(
       
     <div >  
-      <ImageList sx={{ maxWidth: 1120, maxHeight: 800 }} cols={3} rowHeight={320}>
+      <ImageList sx={{ maxWidth:maxWidth, maxHeight: maxHeight }} cols={3} rowHeight={maxWidth/6}>
       {this.promosURL.map((item)=>(
         <div class="w3-container">
        <ImageListItem key={item.img}>
@@ -305,8 +445,8 @@ imageGallery2(){
         title={item.title}
         position="below"
       />
-       </ImageListItem>
-       <ImageListItem key={item.img} sx={{width:350, height:150}}>
+       </ImageListItem>                 {/*sx={{width:350, height:150}}*/}
+       <ImageListItem key={item.img} sx={{width:maxWidth/6, height:maxHeight/6}}>
 
        <ExpandMore
             expanded={this.state.expanded.toString(this.state.expanded === item.id)}
@@ -345,7 +485,8 @@ render(){
 
 return(
   <>
-  {this.imageGallery2()}
+  {/*this.imageGallery2()*/}
+  {this.ComplexGrid()}
   </>
   
 )

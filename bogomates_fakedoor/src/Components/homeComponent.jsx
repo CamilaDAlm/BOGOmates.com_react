@@ -2,9 +2,48 @@ import '../style.scss';
 
 import React from "react";
 import { PromoComponent } from './promoComponent';
+import { Box, Typography } from '@mui/material';
+import {Grid} from '@mui/material';
+import Container from '@mui/material/Container';
 import ReactGA from 'react-ga';
-import { HandleClickGAEvents } from './gaEventsComponent';
+import { HandleClickGAEvents,sendOutbound,initGA,PageView,Event } from './gaEventsComponent';
+import { BOGOIcon } from './navbarComponent';
 export class HomeComponent extends React.Component{
+
+  componentDidMount() {
+    initGA("G-GV1R7BSN88");
+    PageView();
+  }
+
+/*
+
+  <Container maxWidth="sm" className="w3-container" id="promos">
+          <Box
+              height={200}
+              width={200}
+              my={4}
+              display="flex"
+              alignItems="center"
+              gap={4}
+              p={2}
+              sx={{ border: '2px solid grey' }}
+            >
+             <Typography variant="h5" className='w3-wide basic-color' gutterBottom>
+        DEALS
+      </Typography>
+
+          <Grid  container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid item>
+            {<PromoComponent></PromoComponent>}
+            </Grid>
+          </Grid>
+            </Box>
+        </Container>
+
+
+
+*/
+
 
 
 render(){
@@ -12,20 +51,6 @@ render(){
    return(
 
             <>
-       {/* <div className=" w3-large">
-        <div className="w3-container" id="home">
-        <div className="w3-content" style={{maxWidth:"2700px"}}>
-            <h5 className="w3-center w3-padding-64">
-              <span className="w3-tag w3-wide basic-color" >WELCOME</span>
-              </h5>
-            <p>Do you want to enjoy some 2x1 deals ? </p>
-            <p>but...</p>
-            <p>are you missing your promo mate? </p>     
-            
-           
-        </div>
-        </div>
-        </div>*/}
 
         <div className="w3-container" id="promos">
         <div className="w3-content" style={{maxWidth:"2700px"}}>
@@ -33,11 +58,11 @@ render(){
             <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide basic-color">
               DEALS</span></h5>
            
-            {/*<p>Find great <strong className="title">BOGO deals </strong> + people to enjoy it and save money with!</p>   
-            <p>Hit match and find your <strong className="title">BOGO mate</strong> !</p>  */ }
+            
             <div class="w3-row-padding" >
             
             {<PromoComponent></PromoComponent>}
+            
             </div>
         </div>
         </div>
@@ -46,7 +71,7 @@ render(){
         <div className="w3-content" style={{maxWidth:"700px"}}>
             <h5 className="w3-center w3-padding-48"><span className="w3-tag w3-wide basic-color">
               DISCOVER</span></h5>
-            <p className={'w3-center'} style={{color:"#ffe255ff",fontSize:"20px"}}>
+            <p className={'w3-center'} style={{fontSize:"20px"}}>
              <strong> Find lots of deals near your city! </strong> <br/>
               Filter the available deals by city 
               so that you don't miss any great deals near you!   
@@ -70,14 +95,35 @@ render(){
           <p><input className="w3-input w3-padding-16 w3-border" type="number" placeholder="age" required name="age"/></p>
           <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="email" required name="email"/></p>
           <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="location" required name="location"/></p>
-          <p><button className="w3-button header" onClick={()=>{
-            HandleClickGAEvents('regiser','signup')
-          }} >SIGN UP</button></p>
+          <p><button className="w3-button header" onClick={()=> 
+       Event("PRODUCT", "Product added to cart", "PRODUCT_PAGE")
+   } >SIGN UP</button></p>
           
         </div>
       </div>
     </div>    
+    <div className="w3-container" id="about" style={{paddingBottom:"32px"}}>
+        <div className="w3-content" style={{maxWidth:"700px"}}>
+            <h5 className="w3-center w3-padding-48"><span className="w3-tag w3-wide basic-color">
+              ABOUT US</span></h5>
+              <Box className='basic-color'
+                height={40}
+                width={200}
+                marginLeft={30} 
+               >
+           <BOGOIcon sx={  { display: { xs:'block', height: 'inherit',width:'inherit'} }} /> 
+           </Box>
+            <p className={'w3-center'} style={{fontSize:"20px"}}>
+             <strong> is the social media for the <strong className="title">2x1 deal </strong> lovers! </strong> <br/>
+              Thanks to our innovative matching system we help people connect with users
+              that desire to enjoy the same deal and we simplify it by dividing the cost 
+              between them, letting them 
+              <br/>
+               <strong className="title" style={{fontSize:'22px'}}>save up to 50% in each purchase!</strong>
             
+            </p>               
+        </div>
+        </div>
             
             </>
 

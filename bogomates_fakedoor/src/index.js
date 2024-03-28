@@ -17,6 +17,7 @@ TagManager.initialize(tagManagerArgs)
 //Google Analytics
 const TRACKING_ID = "G-GV1R7BSN88"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
