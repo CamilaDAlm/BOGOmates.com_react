@@ -16,7 +16,6 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 
-import { HandleClickGAEvents } from './gaEventsComponent';
 export function CheckboxListSecondary() {
   const [checked, setChecked] = React.useState([1]);
 
@@ -72,15 +71,12 @@ export function CheckboxListSecondary() {
             secondaryAction={
                 <Button
               className="header"
-              component="label"
                 role={undefined}
               variant="contained"
               size="small"
               tabIndex={-1}
-              onClick={()=>{
-                HandleClickGAEvents('deals','click-match')}}
-                >
-                Match!
+              href="#promos">
+                Match
               </Button>  
               /*<Checkbox
                 edge="end"

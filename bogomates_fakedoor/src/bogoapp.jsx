@@ -13,7 +13,10 @@ import { initGA,PageView } from "./Components/gaEventsComponent";
 import TagManager from 'react-gtm-module'
 import ResponsiveAppBar from "./Components/navbarComponent";
 import TopHeaderComponent, { ButtonBaseDemo } from "./Components/topHeaderComponent";
- 
+//import { HandleClickGAEvents } from './Components/gaEventsComponent';
+import { useTranslation } from "react-i18next";
+import './i18n';
+
 const tagManagerArgs = {
     gtmId: 'GTM-KKG4KS8N',
     dataLayer: {
@@ -24,6 +27,19 @@ const tagManagerArgs = {
  
 TagManager.initialize(tagManagerArgs)
 
+let countries = [
+  {
+    code: "es",
+    name: "Español",
+    country_code: "es",
+  },
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+];
+
 export class Bogoapp extends React.Component {
   static contextType = Context;
     constructor(props) {
@@ -33,7 +49,25 @@ export class Bogoapp extends React.Component {
         };
     }
 
-  
+    LanguageSelector = () => {
+    
+      const { t, i18n } = useTranslation();
+    
+      return (
+    
+    <div>
+     <h1>{t("Deals")}</h1>
+      {countries.map( (lng)=>(
+        <button onClick={() => i18n.changeLanguage(lng.code)}>{lng.name}</button>
+      )
+    
+      )}
+    
+    </div>
+    
+      )
+    
+    }
   
 
     componentDidMount(){
@@ -86,12 +120,9 @@ export class Bogoapp extends React.Component {
        }else {
        info = 
        <>
-       {/*<HeadingComponent/>
-      
-         <ButtonBaseDemo/>
-       */}
      
      <TopHeaderComponent/>
+    
        <HomeComponent/>
        <footer className="w3-container w3-theme-d3 w3-padding-16">
         <h5 className="w3-center title">BOGOmates.com - 2024</h5>

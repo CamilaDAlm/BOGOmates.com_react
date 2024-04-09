@@ -13,14 +13,102 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Grid from '@mui/material/Grid';
-
+import { HandleClickGAEvents } from './gaEventsComponent';
 import { ReactComponent as BogoSvg } from '../logo.svg';
 import SvgIcon from '@mui/material/SvgIcon';
 import { Link } from '@mui/material';
+import LanguageIcon from '@mui/icons-material/Language';
+import { useTranslation } from "react-i18next";
+import Icon from '@mui/material/Icon';
+let countries = [
+  {
+    code: "es",
+    name: "Español",
+    country_code: "es",
+  },
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+];
+
+const LanguageSelector = () => {
+  const { t, i18n } = useTranslation();
+
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseUserMenu = (lang) => {
+    setAnchorElUser(null);
+    if (typeof lang ==='string'){
+      console.log(lang)
+      i18n.changeLanguage(lang)
+    }
+  };
+  /*return (
+
+<div>
+ 
+  {countries.map( (lng)=>(
+    <Button onClick={() => i18n.changeLanguage(lng.code)}>{lng.name}</Button>
+  )
+
+  )}
+
+</div>
+
+  )*/
+
+  return(
+    <Box sx={{ flexGrow: 0 }}>
+    <Tooltip title="Open settings">
+      <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+       <LanguageIcon sx={{ color:'white',fontSize:30}}/>
+      </IconButton>
+    </Tooltip>
+    <Menu
+      sx={{ mt: '45px' }}
+      id="menu-appbar"
+      anchorEl={anchorElUser}
+      anchorOrigin={{
+        vertical: 'top',
+        horizontal: 'right',
+      }}
+      keepMounted
+      transformOrigin={{
+        vertical: 'top',
+        horizontal: 'right',
+      }}
+      open={Boolean(anchorElUser)}
+      onClose={handleCloseUserMenu}
+    >
+      {countries.map((country) => (
+        <MenuItem key={country.code} value={country.code} onClick={()=> handleCloseUserMenu(country.code)}>
+        <Typography textAlign="center">{country.name}</Typography>
+         {/*  <Typography textAlign="center">{setting.lang}</Typography> 
+         
+         <Button 
+          sx={{ color: 'black' }}
+          onClick={() => i18n.changeLanguage(setting.lang)}>{setting.lang}</Button>
+         
+         */}
+          
+        </MenuItem>
+      ))}
+    </Menu>
+  </Box>
+  )
+
+}
 
 const pages = [{page:'Deals',id:'promos'},
 {page:'Discover',id:'discover'},{page:'Register',id:'register'},{page:'About us',id:'about'}];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const settings = [{lang:'English',country:'en'},{lang:'Español',country:'es'}];
 
 
 
@@ -36,6 +124,8 @@ export function  BOGOIcon(props) {
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
+  const { t,i18n } = useTranslation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -45,7 +135,10 @@ function ResponsiveAppBar() {
   };
 
   const handleCloseNavMenu = () => {
+   
+   // HandleClickGAEvents('register','click-register')
     setAnchorElNav(null);
+   
   };
 
   const handleCloseUserMenu = () => {
@@ -120,7 +213,9 @@ function ResponsiveAppBar() {
                 
                 <MenuItem key={page.page} onClick={handleCloseNavMenu} >
                   <Typography textAlign="center" sx={{ minWidth: 100 }}>
-                  <Link color='black' href={"#"+page.id} underline='none'>{page.page}</Link>
+                  <Link color='black' href={"#"+page.id}
+               
+                  underline='none'>{page.page}</Link>
                   </Typography>
                  
                 </MenuItem>
@@ -164,10 +259,12 @@ function ResponsiveAppBar() {
                 href={'#'+page.id}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page.page}
+               {t( page.page )}
               </Button>
             ))}
           </Box>
+        
+          <LanguageSelector/>      
          
          
         </Toolbar>

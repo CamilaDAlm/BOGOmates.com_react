@@ -7,7 +7,8 @@ export function HandleClickGAEvents(newCategory,newAction){
    // console.log(props.newCategory)
     ReactGA.event({
         category: newCategory,
-        action: newAction
+        action: newAction,
+       
     })
     
     

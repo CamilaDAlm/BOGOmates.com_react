@@ -7,7 +7,7 @@ import { ContextProvider } from './Context/context';
 import { Bogoapp } from './bogoapp';
 import TagManager from 'react-gtm-module';
 import ReactGA from 'react-ga';
-
+import './i18n'
 //Google tag manager
 const tagManagerArgs = {
     gtmId: 'GTM-KKG4KS8N'
