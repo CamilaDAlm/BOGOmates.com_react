@@ -1,0 +1,89 @@
+
+{"promos":[    
+    {"url": "https://learnopoly.com/wp-content/uploads/2022/11/image3-4.jpg", "link":"https://learnopoly.com/masterclass-buy-one-get-one-free-offer/"
+     ,"title":"2x1 masterclass with celebrities", "id":"0", "user":" Kim Apple", "user_avatar":"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg" 
+    ,"user_availability":"afternoon", "location":"New York", "post_text":"Hello! This promo looks amazing, does someone want to come with me?"
+    ,"comments":[
+      { "user":{"prof_img":"https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=1200x ",
+      "name":"Peter Parker"}, "availability": "11pm-12am", "location": "New York", "comments":"Thats great!"},
+      {"user":{"prof_img":"https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+    ,"name":"Tom Jones"}, "availability":"all day","location": "New York", "comments":"Where is that promo from?"},
+    {"user":{"prof_img":"https://live.staticflickr.com/2923/14088901681_0db7fdb597_b.jpg"
+    ,"name":"Nicole Coleman"}, "availability":"all day","location": "Detroit", "comments":"Cool!"}
+  
+   ]    
+  },
+  {"url": "https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/mcdonalds_2x1.jpeg?raw=true", "link":"https://www.mcdonalds.com/us/es-us/bogo-1.html"
+     ,"title":"bogo deal McDonalds", "id":"1", "user":" Jake Smith", "user_avatar":"https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2016/09/569465-whatsapp-que-tus-contactos-ponen-rana-perfil.jpg?tf=1200x" 
+    ,"user_availability":" 9am-12pm", "location":"New York", "post_text":"I wanna get this one, you too?"
+    ,"comments":[
+      { "user":{"prof_img":"https://lh3.googleusercontent.com/proxy/M3Kb-byeilXVxA1vFccnePdmt1QeD5grPsYZvWblujk1lsSAzcmvcaM4KAKIXXKX0hKgypfkZC0T1XsbY-74bCwX3nVrwVzgS1JRtz0TMDgd-gHQcZtyWrqsfot1WWZXYpWwvxXz7uom-Hjhg6q9UB2iGqqDcAk",
+      "name":"Will Thomas"}, "availability": "8:30pm-14am", "location": "New York", "comments":"Count me in!"},
+      {"user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQxjkPnreXf48z1pjT-kgPb5eV_XqF7TFoprO7NfIc9gm5oYf3IhuE65YTVcPjzmH-TE"
+    ,"name":"Kath Mayers"}, "availability":" only afternoon","location": "New Jersey", "comments":"Anybody during the afternoon?"},
+    {"user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmtHEWGuhPd0KcRI3GedsGjvLHFAG4NGLDV4xNQb5yw&s"
+    ,"name":"Steven Stanley"}, "availability":"Tues. 18pm-22pm","location": "Detroit", "comments":"Afternoon too!"}
+  
+   ]    
+  },
+  {"url":"https://github.com/CamilaDAlm/BOGOmates.com_react/blob/main/bogomates_fakedoor/src/Images/promo_spa.png?raw=true"
+         ,"link":"https://www.marinasenses.com/promociones/Cup%C3%B3n%202x1/","title":"Great spa promo","id":"2", "user":"Maria Pérez" ,"user_avatar":"https://i.pinimg.com/originals/08/af/0e/08af0e9cb70920f9a9460e1db64b3771.jpg"
+         ,"user_availability":"tardes", "location":"Barcelona", "post_text":"Buenas, alguien le interesa esta promo?"
+         ,"comments":[
+           { "user":{"prof_img":"https://cdn0.salir.com/es/articles/9/2/6/donde_hacer_amigos_en_barcelona_629_orig.jpg",
+           "name":"Hugo López"}, "availability": "Sábados-8:00-12:00", "location": "Castelldefels", "comments":"Thats great!"},
+           {"user":{"prof_img":"https://www.shbarcelona.es/blog/es/wp-content/uploads/2015/11/actividades-con-amigos-barcelona.jpg"
+         ,"name":"Oriol_BCN"}, "availability":"Domingo-tardes","location": "Barcelona centro", "comments":"Where is that promo from?"},
+         {"user":{"prof_img":"https://cdn.printerval.com/unsafe/960x960/asset.prtvstatic.com/2023/05/10/645b1f1d01c0a6.18008823.jpg"
+         ,"name":"Montse Fuster"}, "availability":"Miércoles- mañanas","location": "Sant Just Desv.", "comments":"Cool!"}
+         ,{"user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFi6YhGKDf9QgtA6JQa9uhYii6Ej3oS99-Lw&s"
+         ,"name":"Atrapa_Chollos_17"}, "availability":"Findes-Mañana","location": "Cornellá de Ll.", "comments":"Cool!"}
+       
+        ]    
+       }
+  , {"url":"https://www.golfbogo.com/cdn/shop/products/RiverbendWEBJPG_4b2a3f38-d094-4799-942d-c1c22c05847f_1080x.jpg?v=1700633349"
+  , "link":"", "title":"2x1 golf deal","id":"3", "user":" PromoLover_24", "user_avatar":"https://i.pinimg.com/550x/64/ea/bd/64eabd3a40fcd787210793e762a4709b.jpg"
+  ,"user_availability":"Afternoon 16pm-20pm", "location":"Twelve Oaks", "post_text":"Hey! Wanna try golf?"
+  ,"comments":[
+    { "user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WFwAk_fOQ1NkcEE1BLusqhBFl71jueXerCZSvdj-Kg&s",
+    "name":"Emily Pope"}, "availability": "9am-15pm", "location": "Fuquay-Varina", "comments":"Thats great!"},
+    {"user":{"prof_img":"https://live.staticflickr.com/3223/2666630995_87d43a22bb_b.jpg"
+  ,"name":"Megan Sparkles"}, "availability":"Thursdays- 16pm-18pm","location": "Cary,NC", "comments":"Where is that promo from?"},
+  {"user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMrq-V1XzjVZ0NarZ6PAWjp-2sbVzlQtQWrmnemWz8vw&s"
+  ,"name":"John Wineman"}, "availability":"Weekends","location": "Twelve Oaks", "comments":"Cool!"}
+
+ ]    
+}  ,       
+{"url":"https://images.squarespace-cdn.com/content/v1/547e39eee4b004945e334543/1637857691351-IXC1JUN9TOSEY3BPYWED/Float+Tank+2.jpg?format=1000w",
+"link":"", "title":"BOGO Sale! (2x) 90 min Salt Water Floatation","id":"4", "user":"Lily Ricks", "user_avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAoCBAcQOVMJse3aDs4Hbv2hImT2gqwxcVicqqT4AHA&s"
+,"user_availability":"Saturday morning", "location":"Raleigh,NC", "post_text":"BOGO Sale! (2x) 90 min Salt Water Floatation, dm me if someone interested xoxo !!"
+,"comments":[
+  { "user":{"prof_img":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2737e99c-cc9d-4cf0-8706-d7c8050e23ef/d4p8obe-ea6463ae-4f1d-4fa8-8e87-54a16219c716.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI3MzdlOTljLWNjOWQtNGNmMC04NzA2LWQ3YzgwNTBlMjNlZlwvZDRwOG9iZS1lYTY0NjNhZS00ZjFkLTRmYTgtOGU4Ny01NGExNjIxOWM3MTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.d1lcInNhnIKS7o82Y88G2HNTmBEkTkKDkz5cLsozTao",
+  "name":"Carlos Mendoza"}, "availability": "20pm-00am", "location": "Cary", "comments":"Thats great!"},
+  {"user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6aHnvGSTuC21SNVQq6AvcqK9pKKh09mXfK4hVIxZo-g&s"
+,"name":"Bill Henry"}, "availability":"Mondays","location": "Raleigh south", "comments":"Where is that promo from?"},
+{"user":{"prof_img":"https://static.openproductsfacts.org/images/products/871/084/797/9491/front_fr.12.full.jpg"
+,"name":"BOGO_hunter24"}, "availability":"always","location": "Apex", "comments":"Cool!"}
+
+]    
+} ,
+
+
+{"url":"https://static.chollometro.com/threads/raw/MY7Jx/1260129_1/re/1024x1024/qt/60/1260129_1.jpg",
+"link":"https://www.chollometro.com/ofertas/ribs-2x1-en-burgers-de-lunes-a-viernes-solo-en-restaurante-del-2003-al-2005-1260129", "title":"2x1 Burgers","id":"4", "user":"Grimes_fan87",
+"user_avatar":"https://i.scdn.co/image/ab6761610000517434771f759ca81a422f5f2b57"
+,"user_availability":"afternoon 20pm-22pm", "location":"Seattle", "post_text":"I am kinda hungry but I do not have enough money, wanna share?"
+,"comments":[
+  { "user":{"prof_img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6XTaCkdndXcFPvhx0mQMQ1AStw6VENL6XCMTlPy6gIA&s ",
+  "name":"Anastasia Gold"}, "availability": "mornings", "location": "Seattle", "comments":"Thats great!"},
+  {"user":{"prof_img":"https://imgs.search.brave.com/IIZJJPLt0ew3fJl26rk5QZdpm4bDuLQw3VM-jLVOCfI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIy/MjcwOTk1NC92ZWN0/b3IvdC1sZXR0ZXIt/bG9nby1pbi1hLWNp/cmNsZS1pbXBvc3Np/YmxlLWxpbmUtc3R5/bGUuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPTlUazR6VTFF/QWU1ci1JX2F5WFNu/TG5DU3VZTHN2N2tS/QmZsNGl5WE1yNDQ9"
+,"name":"Thom Yorker"}, "availability":"Saturdays","location": "Bellevue", "comments":"Where is that promo from?"}
+
+]    
+}    
+     
+   
+     ]   
+
+  
+        }

@@ -21,5 +21,7 @@
     "Name":"Nombre",
     "Age":"Edad",
     "Email":"Correo",
-    "Location":"Ubicación"
+    "Location":"Ubicación",
+    "list_text":"¡Mira quien esta buscando un colega de promo!",
+    "promos":"[{name:'pepe', user_availability:'tardes'}]"
   }
